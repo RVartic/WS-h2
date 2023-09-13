@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formular</title>
 </head>
 <body>
-    
+    <fieldset style="width: 400px;">
+        <legend>Pizza Order</legend>
+            <form>
+                <label for="1name">Your name:</label>
+                <input type="text" name="Name" id="1name" placeholder="type your name" minlength="3" maxlength="10" required />
+
+                <br /><br />
+                <label for="1email">Your email:</label>
+                <input type="email" name="Email" id="1email" placeholder="type your email" required />
+
+                <br /><br />
+                Topping:
+                <input type="radio" name="Topping" id="Supreme" value="Supreme" /><label for="Supreme">Supreme</label>
+                <input type="radio" name="Topping" id="Vegetarian" value="Vegetarian" /><label for="Vegetarian">Vegetarian</label>
+                <input type="radio" name="Topping" id="Hawaian" value="Hawaian" /><label for="Hawaian">Hawaian</label>
+
+                <br /><br />
+                Sauce:
+                <select>
+                    <option selected>Tomato</option>
+                    <option>Onion</option>
+                </select>
+
+                <br /><br />
+                Extras:
+                <input type="checkbox" name="Extras" id="Cheese" value="Cheese" /><label for="Cheese">Cheese</label>
+                <input type="checkbox" name="Extras" id="Onions" value="Onions" /><label for="Onions">Onions</label>
+                <input type="checkbox" name="Extras" id="Olives" value="Olives" /><label for="Olives">Olives</label>
+
+                <br /><br />
+                <label for="1amount">Amount: </label>
+                <input type="number" name="Amount" id="1amount" value="1" min="1" max="7" />
+
+                <br /><br />
+                Delivery date: 
+                <input type="date" name="date-start" />
+
+                <br /><br />
+                <lavel for="1ta">Delivery instructions: </lavel><br />
+                <textarea id="1ta" name="comment" rows="6" cols="55" required></textarea>
+
+                <br /><br />
+                <input type="submit" value="Send order">
+                <button type="reset">Reset</button>
+
+            </form>
+    </fieldset>
 </body>
 </html>
